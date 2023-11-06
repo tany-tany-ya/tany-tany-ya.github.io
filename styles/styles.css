@@ -42,7 +42,18 @@
     }
 }
 
-.page-header__container,
+.page-header__container {
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 1414px;
+    width: 100%;
+}
 .events__container {
     box-sizing: border-box;
     margin: 0 auto;
@@ -55,6 +66,7 @@
     width: 100%;
     position: relative;
     align-items: center;
+    flex-direction: column;
 }
 
 .page-header__nav {
@@ -155,9 +167,11 @@
 }
 
 .events__title {
+    align-self: center;
     margin-bottom: 150px;
 
 }
+
 
 .title {
     margin: 0 0 150px;
